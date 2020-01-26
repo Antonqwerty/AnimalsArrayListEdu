@@ -36,6 +36,10 @@ public class Main {
                     for (int i = 0; i < list.size(); i++) {
                         System.out.println(list.get(i).getName() + " " + list.get(i).getLifeTime());
                     }
+                    void sortByLifeTime() { // идентично
+                    Collections.sort(list, Animal.animalComparatorlifeTimeAsc()); 
+
+                }
             }
         }
     }
