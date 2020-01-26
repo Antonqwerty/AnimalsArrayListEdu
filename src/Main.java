@@ -32,14 +32,11 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Сортировка по увеличению длительности жизни:");
-                    animal1.animalComparatorlifeTimeAsc(); //не работает компоратор
+                    //animal1.animalComparatorlifeTimeAsc(); //не работает компоратор (а что такое animal1 ??)
                     for (int i = 0; i < list.size(); i++) {
                         System.out.println(list.get(i).getName() + " " + list.get(i).getLifeTime());
-                    }
-                    void sortByLifeTime() { // идентично
-                    Collections.sort(list, Animal.animalComparatorlifeTimeAsc()); 
-
-                }
+                    } 
+                    Collections.sort(list);
             }
         }
     }
