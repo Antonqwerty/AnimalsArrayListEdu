@@ -24,10 +24,17 @@ public class Main {
                 case 2:
                     if (list.size() == 0) {
                         System.out.println("пусто");
-                    }else {
+                    } else {
                         for (int i = 0; i < list.size(); i++) {
                             System.out.println(list.get(i).getName() + " " + list.get(i).getLifeTime());
                         }
+                    }
+                    break;
+                case 3:
+                    System.out.println("Сортировка по увеличению длительности жизни:");
+                    animal1.animalComparatorlifeTimeAsc(); //не работает компоратор
+                    for (int i = 0; i < list.size(); i++) {
+                        System.out.println(list.get(i).getName() + " " + list.get(i).getLifeTime());
                     }
             }
         }
